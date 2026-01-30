@@ -3,15 +3,13 @@ from turtle import *
 t = Turtle()
 t.shape('turtle')
 
-def square(x):
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-square(200)
+def square(t):
+    for i in range(4):
+        t.forward(100)
+        t.left(90)
 
-turtle.done()
+square(t)
+
+for i in range(60):
+    square(t)
+    t.right(5)
